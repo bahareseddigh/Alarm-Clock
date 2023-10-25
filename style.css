@@ -15,3 +15,31 @@ body{
     height: 100vh;
     background: #4a98f7;
 }
+.container{
+    width: 450px;
+    background-color: #fff;
+    border-radius: 10px;
+    flex-direction: column;
+    padding: 30px;
+}
+.container h1{
+    font-size: 40px;
+    margin: 30px 0;
+}
+.container .content{
+    width: 100%;
+    justify-content: space-between;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
