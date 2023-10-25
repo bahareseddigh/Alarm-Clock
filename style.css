@@ -6,3 +6,12 @@
     box-sizing: border-box;
     font-family: 'Poppins' , sans-serif;
 }
+body, .container, .content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+body{
+    height: 100vh;
+    background: #4a98f7;
+}
