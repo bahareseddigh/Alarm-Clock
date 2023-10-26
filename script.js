@@ -1,5 +1,7 @@
 const selectMenu = document.querySelectorAll('select')
 const timeBox = document.querySelector('.time')
+const setAlarmBtn = document.querySelector('button')
+let alarmTime
 
 for(let i = 23 ; i >= 0 ; i--){
     i = i < 10 ? '0' + i : i
@@ -25,3 +27,25 @@ setInterval( () => {
     ;
 
 }, 1000)
+
+
+setAlarmBtn.addEventListener('click' , () => {
+    alarmTime = `${selectMenu[0].value}:${selectMenu[1].value}`
+    if(alarmTime.includes('Hour') || alarmTime.includes('Minute')){
+        return alert('لطفا زمان هشدار را به درستی مشخص کنید!')
+    }
+})
+
+
+
+
+
+
+
+
+
+
+
+
+
+
