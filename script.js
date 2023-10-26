@@ -3,7 +3,7 @@ const timeBox = document.querySelector('.time')
 const setAlarmBtn = document.querySelector('button')
 const content = document.querySelector('.content')
 
-let alarmTime
+let alarmTime , alarmState = 'noset'
 const ringTone = new Audio('./assets/dadam.mp3')
 
 for(let i = 23 ; i >= 0 ; i--){
@@ -43,20 +43,20 @@ setAlarmBtn.addEventListener('click' , () => {
     if(alarmTime.includes('Hour') || alarmTime.includes('Minute')){
         return alert('لطفا زمان هشدار را به درستی مشخص کنید!')
     }
-    content.classList.add('disable')
-    setAlarmBtn.innerText = 'Clear Alarm'
+    checkState(alarmState)
 })
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+function checkState(state){
+    if(state == 'noset'){
+        content.classList.add('disable')
+        setAlarmBtn.innerText = 'Clear Alarm'
+        alarmState = 'set'
+    }
+    else{
+        content.classList.remove('disable')
+        setAlarmBtn.innerText = 'Set Alarm'
+        alarmTime = ''
+        ringTone.pause()
+        alarmState = 'noset'
+    }
+}
