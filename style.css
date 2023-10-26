@@ -50,6 +50,7 @@ body{
 .container button{
     width: 100%;
     border: 0;
+    outline: 0;
     margin-top: 17px;
     padding: 10px 0;
     border-radius: 5px;
