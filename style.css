@@ -43,6 +43,41 @@ body{
     width: 100%;
     cursor: pointer;
 }
+.container button{
+    width: 100%;
+    border: 0;
+    margin-top: 17px;
+    padding: 10px 0;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #4a98f7;
+    color: #fff;
+    transition: all .2s;
+}
+.container button:hover{
+    background-color: #338bf7;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
