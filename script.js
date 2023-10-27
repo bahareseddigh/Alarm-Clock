@@ -4,7 +4,7 @@ const setAlarmBtn = document.querySelector('button')
 const content = document.querySelector('.content')
 
 let alarmTime , alarmState = 'noset'
-const ringTone = new Audio('./assets/dadam.mp3')
+const ringTone = new Audio('./assets/ringtone.mp3')
 
 for(let i = 23 ; i >= 0 ; i--){
     i = i < 10 ? '0' + i : i
